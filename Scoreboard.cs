@@ -15,10 +15,16 @@ namespace DiceGame
             if (iPlayerScore > iAiScore)
             {
                 PlayerScore++;
+                Console.WriteLine("\nPlayer wins this round");
             }
             else if (iPlayerScore < iAiScore)
             {
                 AiScore++;
+                Console.WriteLine("\nEnemyAi wins this round");
+            }
+            else
+            {
+                Console.WriteLine("\nThis round is a draw");
             }
         }
     }
